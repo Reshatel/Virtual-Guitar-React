@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Virtual-Guitar-React/static/css/main.395a4d5b.css",
+    "main.js": "/Virtual-Guitar-React/static/js/main.85ca397d.js",
+    "static/js/453.48bcd46a.chunk.js": "/Virtual-Guitar-React/static/js/453.48bcd46a.chunk.js",
+    "static/media/guitar-neck.png": "/Virtual-Guitar-React/static/media/guitar-neck.f637143b7da69e2ba5c6.png",
+    "static/media/Rock-Guitar-PNG-Download-Image.png": "/Virtual-Guitar-React/static/media/Rock-Guitar-PNG-Download-Image.d0295c0084c27f005f50.png",
+    "static/media/logo.png": "/Virtual-Guitar-React/static/media/logo.7b9a2ac9fa80d584ea51.png",
+    "index.html": "/Virtual-Guitar-React/index.html",
+    "main.395a4d5b.css.map": "/Virtual-Guitar-React/static/css/main.395a4d5b.css.map",
+    "main.85ca397d.js.map": "/Virtual-Guitar-React/static/js/main.85ca397d.js.map",
+    "453.48bcd46a.chunk.js.map": "/Virtual-Guitar-React/static/js/453.48bcd46a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.395a4d5b.css",
+    "static/js/main.85ca397d.js"
+  ]
+}
