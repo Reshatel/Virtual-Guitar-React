@@ -1,0 +1,215 @@
+html{
+  background: #ffe3b3;
+  width: 100%;
+   scroll-behavior: smooth;
+}
+
+.App {
+  text-align: center;
+  background: #ffe3b3;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("assets/Rock-Guitar-PNG-Download-Image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 60% 1000px;
+}
+
+
+.header {
+  width: 100%;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, rgba(255, 102, 0, 0.7), rgba(255, 204, 0, 0.7));
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 7px 10px rgba(78, 31, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 204, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0px; 
+}
+
+.logo-img {
+  width: 70px;
+  transform: rotate(30deg);  
+  height: auto;
+}
+
+.logo-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+  animation: glow 1.5s infinite alternate;
+  text-decoration: none;
+}
+
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+  animation: glow 1.5s infinite alternate;
+}
+
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 10px rgba(170, 169, 169, 0.5);
+  }
+  to {
+    text-shadow: 0px 0px 25px rgba(255, 255, 255, 1);
+  }
+}
+
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #000000;
+  box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+}
+
+.fretboard {
+  position: relative;
+  padding: 0;
+  background-color: #ffe3b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 4560px;
+  max-width: 2000px;
+  margin: 100px auto;
+  left: -250px;
+  top: -200px;
+}
+
+.fretboard button.toggle-button {
+  background-color: #f1c40f;
+  color: #222;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.fretboard button.toggle-button:hover {
+  background-color: #e67e22;
+}
+
+.fretboard .guitar-neck {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fret-button {
+  position: absolute;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.fret-button:hover {
+  background: rgba(0, 255, 0, 0.7);
+}
+
+
+::-webkit-scrollbar /{
+  width: 6px; 
+  
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px; 
+  border: 2px solid transparent;
+  background-clip: padding-box; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+}
+
+
+
+.chord-buttons {
+  text-align: center;
+  margin-top: -550px;
+  z-index: 999;
+}
+
+.chord-buttons h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.buttons button {
+  background: #ff9800;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background: #e68900;
+}
