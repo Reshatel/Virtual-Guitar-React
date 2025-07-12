@@ -110,11 +110,12 @@ const playChord = (chord) => {
   chords[chord].forEach((noteKey) => {
     const note = audioFiles[noteKey];
     if (note) {
-      const audio = new Audio(note);
+      const audio = new Audio(process.env.PUBLIC_URL + note);
       audio.play();
     }
   });
 };
+
 
 const ChordButtons = () => {
   return (

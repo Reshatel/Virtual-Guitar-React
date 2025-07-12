@@ -8,7 +8,7 @@ const Tabs = () => {
   const [filteredTab, setFilteredTab] = useState(null);
 
   useEffect(() => {
-    fetch("/tabs.json")
+    fetch(process.env.PUBLIC_URL + "/tabs.json")
       .then((res) => res.json())
       .then((data) => setTabs(data))
       .catch((err) => console.error("Error", err));

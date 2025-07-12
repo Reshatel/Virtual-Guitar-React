@@ -98,16 +98,17 @@ const MelodyPlayer = () => {
   const [activeNote, setActiveNote] = useState(null);
 
   const playMelody = async () => {
-    for (let note of melody) {
-      setActiveNote(note); 
+  for (let note of melody) {
+    setActiveNote(note); 
 
-      const audio = new Audio(audioFiles[note]);
-      await audio.play();
-      await new Promise(resolve => setTimeout(resolve, 400)); 
+    const audio = new Audio(process.env.PUBLIC_URL + audioFiles[note]);
+    await audio.play();
+    await new Promise(resolve => setTimeout(resolve, 400)); 
 
-      setActiveNote(null); 
-    }
-  };
+    setActiveNote(null); 
+  }
+};
+
 
  return (
   <div className="melody-container">

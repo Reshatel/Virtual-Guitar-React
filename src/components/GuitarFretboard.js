@@ -101,7 +101,7 @@ const audioFiles = {
 const playSound = (string, fret) => {
   const key = `${string}-${fret}`;
   if (audioFiles[key]) {
-    const audio = new Audio(audioFiles[key]);
+    const audio = new Audio(process.env.PUBLIC_URL + audioFiles[key]);
     audio.play();
   }
 };

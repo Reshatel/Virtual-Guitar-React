@@ -154,7 +154,7 @@ html{
 }
 
 
-::-webkit-scrollbar /{
+::-webkit-scrollbar {
   width: 6px; 
   
 }
